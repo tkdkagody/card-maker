@@ -1,19 +1,21 @@
 @value mediaQuery from '../../common/size.css';
+@value makerWhite from '../../common/colors.css';
 
 .maker {
-    width: 100%; 
-    height: 100%; 
-    display: flex;
-    flex-direction: column;
-}
-.container {
-    display: flex;
-    flex:1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: makerWhite;
 }
 
-/*반응형*/
-@media screen and (max-width: mediaQuery ) {
-    .container {
-        flex-direction: column;
-    }
+.container {
+  display: flex;
+  flex: 1;
+}
+
+@media screen and (max-width: mediaQuery) {
+  .container {
+    flex-direction: column;
+  }
 }

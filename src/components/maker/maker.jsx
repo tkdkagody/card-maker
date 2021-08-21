@@ -56,8 +56,10 @@ const Maker = ({ authService }) => {
   });
 
   const addCard = card => {
-    console.log(card);
+    const update = [...cards, card];
+    setCards(update);
   };
+
   return (
     <section className={styles.maker}>
       <Header onLogout={onLogout} />

@@ -15,6 +15,7 @@ const CardAddForm = ({onAdd}) => {
 
   const onSubmit = (event) => {
     event.preventDefault();
+
     const card = {
       id: Date.now(), //uuid
       name : nameRef.current.value || "" ,
@@ -26,6 +27,7 @@ const CardAddForm = ({onAdd}) => {
       fileName : "",
       fileURL: "",
     }
+    
     formRef.current.reset();  //리셋해줌 
     onAdd(card);
   };
